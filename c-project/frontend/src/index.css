@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply antialiased;
+  }
+}
+
+@layer utilities {
+  .btn-primary {
+    @apply bg-indigo-600 text-white font-medium py-2.5 px-6 rounded-lg shadow-md hover:bg-indigo-700 hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 transition-all duration-200;
+  }
+  
+  .input-modern {
+    @apply w-full px-4 py-2.5 rounded-lg border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 transition-all duration-200 bg-white text-gray-900 placeholder-gray-400;
+  }
+  
+  .input-with-icon {
+    @apply w-full px-4 py-2.5 pl-8 rounded-lg border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 transition-all duration-200 bg-white text-gray-900 placeholder-gray-400;
+  }
+  
+  .input-with-dollar {
+    @apply w-full px-4 py-2.5 pl-7 rounded-lg border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 transition-all duration-200 bg-white text-gray-900 placeholder-gray-400;
+  }
+  
+  .card {
+    @apply bg-white shadow-md rounded-lg hover:shadow-lg transition-shadow duration-200;
+  }
+}
+
